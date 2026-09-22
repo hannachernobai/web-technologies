@@ -1,0 +1,39 @@
+# Node.js
+node_modules/
+
+# Logs
+*.log
+
+# Environment variables
+.env
+
+# Dependency directories
+vendor/
+
+# Build directories
+dist/
+build/
+
+# IDE
+.vscode/
+.idea/
+
+# Operating System files
+.DS_Store
+Thumbs.db
+
+# Temporary files
+*.tmp
+*.temp
+
+# Python
+__pycache__/
+*.pyc
+
+# Java
+*.class
+
+# Archives
+*.zip
+*.rar
+*.7z
