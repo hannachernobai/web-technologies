@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <a href="/lab-03/index.html" target="_blank"
+      ><font size="3">Повернутись назад.</font></a
+    >
+    <!--<form method="get">-->
+    <form method="post" enctype="multipart/form-data">
+      <fieldset>
+        <legend>Персональна форма даних</legend>
+        <label>Ім'я:</label>
+        <input
+          name="username"
+          tabindex="0"
+          type="text"
+          placeholder="Введіть ваше ім'я"
+          required />
+        <br /><br /><label>Пароль:</label
+        ><input
+          name="password"
+          tabindex="0"
+          type="password"
+          placeholder="Введіть ваш пароль"
+          required
+          pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*\d).{6}"
+          title="Пароль має складатися рівно з 6 символів, містити хоча б одну велику літеру, одну малу літеру та одну цифру" />
+        <br /><br /><label>Еmail:</label
+        ><input
+          name="email"
+          tabindex="0"
+          type="email"
+          placeholder="Введіть ваш email"
+          autocomplete="off"
+          pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}"
+          title="Введіть коректну email-адресу, наприклад: name@example.com" />
+        <br /><br /><label>Телефон:</label
+        ><input
+          tabindex="0"
+          type="tel"
+          name="phone"
+          placeholder="Введіть ваш телефон"
+          pattern="(^ \+380|^\+38|^38|^0|)\d{9}$"
+          title="Введіть номер у форматі: 0ХХХХХХХХХ або +380ХХХХХХХХХ" />
+        <br /><br /><label>Дата:</label
+        ><input
+          tabindex="0"
+          name="date"
+          type="date"
+          placeholder="Введіть сьогоднішню дату" />
+        <br /><br /><label>Введіть мету подачі заяви: </label
+        ><textarea
+          name="reason"
+          tabindex="0"
+          placeholder="Почніть описувати мету..."></textarea>
+        <br /><br /><label>Вкажіть стать:</label><br />
+        <label
+          ><input
+            tabindex="0"
+            type="radio"
+            name="gender"
+            value="female" />Жінка</label
+        ><br />
+        <label
+          ><input
+            tabindex="0"
+            type="radio"
+            name="gender"
+            value="male" />Чоловік</label
+        ><br />
+        <label
+          ><input
+            tabindex="0"
+            type="radio"
+            name="gender"
+            value="other" />Інше</label
+        ><br />
+        <br /><br />
+        <fieldset>
+          <legend>Професійна частина</legend>
+          <label>Вкажіть працевлаштування:</label><br />
+          <label
+            ><input
+              tabindex="0"
+              type="radio"
+              name="work"
+              value="employed" />Працевлаштований</label
+          ><br />
+          <label
+            ><input
+              tabindex="0"
+              type="radio"
+              name="work"
+              value="unemployed" />Не працевлаштований</label
+          ><br />
+          <label
+            ><input
+              tabindex="0"
+              type="radio"
+              name="work"
+              checked
+              value="searching" />В пошуку роботи</label
+          ><br /><br />
+          <label>Оберіть усі ваші хобі:</label><br />
+          <label
+            ><input
+              tabindex="0"
+              type="checkbox"
+              name="hobby"
+              value="drawing" />Малювання</label
+          ><br />
+          <label
+            ><input
+              tabindex="0"
+              type="checkbox"
+              name="hobby"
+              value="reading" />Читання</label
+          ><br />
+          <label
+            ><input
+              tabindex="0"
+              type="checkbox"
+              name="hobby"
+              value="sport" />Спорт</label
+          ><br />
+          <label
+            ><input
+              tabindex="0"
+              type="checkbox"
+              name="hobby"
+              value="dancing" />Танці</label
+          ><br /><br />
+          <label>Які предмети ви вивчали?</label><br />
+          <select name="subjects">
+            <option value="math">Математика</option>
+            <option value="ukr">Укр мова</option>
+            <option selected value="eng">Англ мова</option>
+            <option value="physics">Фізика</option>
+            <option value="biology">Біологія</option></select
+          ><br /><br />
+          <label>Чому вам подобається HTML?</label><br />
+          <select multiple name="html">
+            <option value="syntax">Синтаксис</option>
+            <option value="styling">Оформлення</option>
+            <option value="logic">Логіка коду</option>
+            <option value="not_lang">Не мова програмування</option>
+            <option value="easy">Легка у вивченні</option>
+            <option value="modern">Сучасна</option></select
+          ><br /><br />
+          <label>Оберіть технологію для вивчення:</label><br />
+          <select name="study">
+            <optgroup label="Frontend">
+              <option value="html5">HTML5</option>
+              <option value="css3">CSS3</option>
+              <option value="js">JavaScript</option>
+            </optgroup>
+            <optgroup label="Backend">
+              <option value="php">PHP</option>
+              <option value="python">Python</option>
+              <option value="nodejs">Nodejs</option>
+            </optgroup>
+            <optgroup label="Бази даних">
+              <option value="mysql">MySQL</option>
+              <option value="postgresql">PostgreSQL</option>
+              <option value="mongodb">MongoDB</option>
+            </optgroup>
+            <optgroup label="Фреймворки">
+              <option value="react">React</option>
+              <option value="vue">Vue.js</option>
+              <option value="angular">Angular</option>
+            </optgroup></select
+          ><br /><br />
+          <label>Оберіть місто:</label><br /><input list="cities" name="city" />
+          <datalist id="cities">
+            <option value="Київ">Київ</option>
+            <option value="Одеса">Одеса</option>
+            <option value="Суми">Суми</option></datalist
+          ><br /><br />
+        </fieldset>
+        <button tabindex="0" type="submit">Надіслати</button><br />
+        <button tabindex="0" type="reset">Очистити</button><br /><br />
+        <label>Завантажте аудіо</label>
+        <input
+          tabindex="0"
+          type="file"
+          accept="audio/*"
+          multiple
+          name="audio" /><br /><br />
+      </fieldset>
+    </form>
+  </body>
+</html>
