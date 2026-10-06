@@ -1,0 +1,41 @@
+h1 {
+  color: red;
+  font-weight: 700;
+  text-align: center;
+}
+h2 {
+  text-align: center;
+  font-style: italic;
+}
+
+p {
+  text-align: center;
+}
+
+.bold-text {
+  font-weight: 700;
+}
+
+.underline-text {
+  text-decoration: underline;
+}
+
+hr {
+  background-color: green;
+  height: 4px;
+  width: 60%;
+}
+
+#last-capture {
+  font-family: "Comic Sans MS", "Courier New", sans-serif;
+  font-style: italic;
+}
+
+.text-through {
+  text-decoration: line-through;
+}
+
+#my-mark {
+  color: black;
+  background-color: yellow;
+}

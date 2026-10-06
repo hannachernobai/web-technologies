@@ -1,0 +1,27 @@
+a {
+  color: violet;
+}
+
+.main-menu {
+  color: green;
+}
+
+.square-mark {
+  list-style-type: square;
+}
+
+.picto-mark {
+  list-style-type: "✔";
+}
+
+ul li ul {
+  list-style-type: none;
+}
+
+.square-mark a {
+  text-decoration: none;
+}
+
+ol {
+  list-style-position: inside;
+}
