@@ -1,0 +1,39 @@
+table {
+  font-family: Arial, sans-serif;
+  color: white;
+  text-align: center;
+}
+
+tr:first-child th:first-child {
+  background-color: #e6c7c7;
+}
+tr:first-child th:nth-child(2),
+tr:first-child th:nth-child(3) {
+  background-color: #d49b9b;
+}
+tr:first-child th:nth-child(4) {
+  background-color: #8b3a3a;
+}
+tr:first-child th:nth-child(5) {
+  background-color: #5c2222;
+}
+
+tr:not(:first-child) th {
+  background-color: #b55252;
+}
+
+tr:nth-child(2) td {
+  background-color: #d49b9b;
+}
+tr:nth-child(3) td {
+  background-color: #c98282;
+}
+tr:nth-child(4) td {
+  background-color: #b55252;
+}
+tr:nth-child(5) td {
+  background-color: #a33d3d;
+}
+tr:nth-child(6) td {
+  background-color: #8b3a3a;
+}

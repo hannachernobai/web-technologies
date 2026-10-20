@@ -1,0 +1,67 @@
+div:nth-of-type(1) {
+  width: 300px;
+  padding: 20px;
+  border: 5px solid #452364;
+  box-sizing: content-box;
+  display: inline-block;
+  margin: 20px;
+  background-color: bisque;
+  /*300 + 2 * 20 + 2 * 5 = 350px*/
+}
+
+div:nth-of-type(2) {
+  width: 300px;
+  padding: 20px;
+  border: 5px solid #452364;
+  box-sizing: border-box;
+  display: inline-block;
+  margin: 20px;
+  background-color: bisque;
+  /* border-box не враховує padding border 300px*/
+}
+
+div:nth-of-type(3) {
+  max-height: 80px;
+  border: 2px solid;
+  overflow: visible;
+}
+
+div:nth-of-type(4) {
+  max-height: 80px;
+  border: 2px solid;
+  overflow: hidden;
+}
+
+div:nth-of-type(5) {
+  max-height: 80px;
+  border: 2px solid;
+  overflow: scroll;
+}
+
+div:nth-of-type(6) {
+  max-height: 80px;
+  border: 2px solid;
+  overflow: auto;
+}
+ul {
+  list-style-type: none;
+}
+
+li {
+  display: inline-block;
+}
+
+a {
+  display: block;
+  padding: 10px 20px;
+}
+
+.hidden-item {
+  display: none;
+}
+/* 
+  Відмінність display: none від інших способів приховування:
+  - display: none повністю видаляє елемент із потоку документа (він не займає місця, інші елементи зсуваються).
+  - visibility: hidden ховає елемент, але залишає після нього порожнє місце.
+  - opacity: 0 робить елемент повністю прозорим, але він залишається на своєму місці і реагує на кліки.
+*/

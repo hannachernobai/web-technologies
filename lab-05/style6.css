@@ -1,0 +1,89 @@
+body {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url("image/0657c5d7fe58fe91995a1edfdb37c83b.jpg");
+  background-attachment: fixed;
+  background-color: rgb(216, 47, 160);
+}
+
+.container {
+  max-width: 900px;
+  min-width: 320px;
+  padding: 20px;
+  box-sizing: border-box;
+  margin: 0 auto;
+  background-color: rgba(255, 255, 255, 0.85);
+}
+/* Коментар: Якщо вікно браузера стає вужчим за 320px, контейнер не може стиснутися нижче мінімального значення min-width, через що на сторінці з'являється горизонтальна смуга прокручування.*/
+
+.tag-div {
+  display: inline;
+  width: 200px;
+  height: 100px;
+}
+/* Коментар: Значення width та height не діють, оскільки display: inline перетворює елементи на рядкові, а рядкові елементи ігнорують явні розміри width і height. */
+
+.span-block {
+  display: block;
+  width: 150px;
+}
+
+.repeat-block {
+  height: 200px;
+  background-image: url("image/384443121_w640_h320_myagkaya-igrushka-podushka-kot.webp");
+}
+
+.repeat-block:nth-of-type(1) {
+  background-repeat: repeat-x;
+}
+.repeat-block:nth-of-type(2) {
+  background-repeat: repeat-y;
+}
+.repeat-block:nth-of-type(3) {
+  background-repeat: space;
+}
+.repeat-block:nth-of-type(4) {
+  background-repeat: round;
+}
+
+/* 
+  Різниця між space та round:
+  - space: повторює зображення стільки разів, скільки повністю поміщається, а вільний простір рівномірно розподіляє у вигляді відступів між картинками (без обрізання).
+  - round: масштабує (згортає або розтягує) зображення так, щоб вони заповнили простір цілком без обрізань і додаткових зазорів.
+*/
+
+.size-block {
+  width: 300px;
+  height: 200px;
+  border: 2px solid #333;
+  background-image: url("image/car_fan_recirculate_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.png");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.size-contain {
+  background-size: contain;
+}
+.size-cover {
+  background-size: cover;
+}
+
+.attachment-block {
+  max-height: 150px;
+  overflow: auto;
+  background-image: url("/lab-05/image/images\ \(9\).jpg");
+}
+
+.attach-scroll {
+  background-attachment: scroll;
+}
+.attach-local {
+  background-attachment: local;
+}
+
+/* 
+  Різниця background-attachment під час прокручування контенту всередині блоку:
+  - scroll: фонове зображення зафіксоване відносно рамки блоку і не рухається разом із текстом під час скролу всередині.
+  - local: фонове зображення прив'язане до вмісту і прокручується разом із текстом усередині блоку.
+*/

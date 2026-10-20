@@ -1,0 +1,84 @@
+div {
+  background-color: rgb(255, 165, 0);
+  width: 500px;
+  padding: 20px;
+  color: white;
+}
+
+h1 {
+  font-size: 25px;
+  font-weight: 900;
+  margin-bottom: 10px;
+}
+
+ul {
+  list-style-position: inside;
+  list-style-type: none;
+}
+
+.mark1level {
+  background-color: rgb(103, 158, 128);
+  padding-right: 20px;
+  padding-left: 50px;
+}
+
+.mark2level {
+  font-size: 18px;
+  font-style: italic;
+  background-color: rgb(153, 180, 102);
+  margin-bottom: 10px;
+  padding-left: 40px;
+}
+
+.mark2level li {
+  background-position: top left;
+  background-repeat: no-repeat;
+  background-size: 20px 20px;
+  padding-left: 30px;
+  margin-bottom: 10px;
+}
+
+span {
+  padding: 10px 20px;
+  display: inline-block;
+}
+
+.span1level {
+  font-size: 20px;
+  font-weight: 700;
+  background-color: rgb(199, 124, 106);
+  margin-bottom: 10px;
+  background-image: url("/lab-05/image/checklist_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.png");
+  background-position: left center;
+  background-repeat: no-repeat;
+  background-size: 20px 20px;
+}
+
+.span2level {
+  background-color: rgb(218, 106, 32);
+}
+
+.item-mobile {
+  background-image: url("/lab-05/image/mobile_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.png");
+}
+.item-flight {
+  background-image: url("/lab-05/image/flight_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.png");
+}
+.item-hotel {
+  background-image: url("/lab-05/image/hotel_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.png");
+}
+.item-car {
+  background-image: url("/lab-05/image/car_fan_recirculate_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.png");
+}
+.item-bar {
+  background-image: url("/lab-05/image/wine_bar_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.png");
+}
+.item-museum {
+  background-image: url("/lab-05/image/museum_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.png");
+}
+.item-festival {
+  background-image: url("/lab-05/image/festival_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.png");
+}
+.item-casino {
+  background-image: url("/lab-05/image/casino_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.png");
+}

@@ -1,0 +1,38 @@
+div {
+  width: 300px;
+  height: 200px;
+  margin: 20px;
+  padding: 15px;
+  display: inline-block;
+}
+
+div:nth-of-type(1) {
+  background-size: 40px 40px;
+  background-image: linear-gradient(45deg, #3a828b 50%, #12a3bc 50%);
+}
+
+div:nth-of-type(2) {
+  background-image:
+    linear-gradient(90deg, rgba(58, 130, 139, 0.4) 1px, transparent 1px),
+    linear-gradient(0deg, rgba(58, 130, 139, 0.4) 1px, transparent 1px);
+  background-color: #e6f4f6;
+  background-size: 60px 60px;
+}
+
+div:nth-of-type(3) {
+  background-image: radial-gradient(
+    circle farthest-corner at 30px 20px,
+    #315cc9 0%,
+    #22386c 50%,
+    #a198cf 100%
+  );
+}
+
+div:nth-of-type(4) {
+  background-color: #056f96;
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.5), transparent);
+  background-repeat: no-repeat;
+  background-position: bottom;
+
+  background-size: 100% 50%;
+}

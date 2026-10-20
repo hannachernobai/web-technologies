@@ -1,0 +1,20 @@
+body {
+  background-color: #b3cfc6;
+  font-family: Arial, sans-serif;
+  color: #333333;
+  line-height: 1.6;
+}
+
+legend {
+  font-size: 18px;
+  font-weight: bold;
+  color: #1a252f;
+  background-color: #1dc61d;
+}
+
+button {
+  background-color: #28a745;
+  color: #ffffff;
+  font-weight: 700;
+  text-align: center;
+}
