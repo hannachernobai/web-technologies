@@ -1,0 +1,45 @@
+.div1 {
+  color: aliceblue;
+  background-color: blue;
+  position: absolute;
+  top: 50px;
+  left: 50px;
+  width: 150px;
+  height: 250px;
+  border: 1px solid black;
+  text-align: center;
+  font-size: 22px;
+}
+
+.div2 {
+  color: black;
+  background-color: aquamarine;
+  position: absolute;
+  top: 100px;
+  left: 200px;
+  width: 150px;
+  height: 200px;
+  border: 1px solid black;
+  text-align: center;
+  font-size: 20px;
+}
+
+.div3 {
+  color: black;
+  background-color: aqua;
+  position: absolute;
+  top: 150px;
+  left: 350px;
+  width: 180px;
+  height: 150px;
+  border: 1px solid black;
+  text-align: center;
+  font-size: 18px;
+}
+
+.big {
+  font-size: 28px;
+}
+.small {
+  font-size: 14px;
+}

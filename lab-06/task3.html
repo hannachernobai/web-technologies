@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Реєстрація на курс</title>
+    <link rel="stylesheet" href="/lab-06/style3.css" />
+  </head>
+  <body>
+    <form class="form">
+      <h1 class="form-title">Реєстрація на курс</h1>
+      <p class="form-intro">
+        Заповніть форму, щоб записатися на курс «Веб-технології». Поля,
+        позначені зірочкою, обов'язкові.
+      </p>
+
+      <div class="form-fields">
+        <div class="form-group">
+          <label class="form-label form-label--required" for="firstname"
+            >Ім'я</label
+          >
+          <input class="form-input" type="text" id="firstname" />
+        </div>
+
+        <div class="form-group">
+          <label class="form-label form-label--required" for="lastname"
+            >Прізвище</label
+          >
+          <input class="form-input" type="text" id="lastname" />
+        </div>
+
+        <div class="form-group">
+          <label class="form-label form-label--required" for="email"
+            >Email</label
+          >
+          <input class="form-input" type="email" id="email" />
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="phone">Телефон</label>
+          <input class="form-input" type="tel" id="phone" />
+        </div>
+
+        <div class="form-group">
+          <label class="form-label form-label--required" for="password"
+            >Пароль</label
+          >
+          <input
+            class="form-input form-input--password"
+            type="password"
+            id="password" />
+        </div>
+
+        <div class="form-group">
+          <label class="form-label form-label--required" for="password2"
+            >Повторіть пароль</label
+          >
+          <input
+            class="form-input form-input--password"
+            type="password"
+            id="password2" />
+        </div>
+      </div>
+
+      <div class="form-group form-group--full">
+        <label class="form-label" for="about">Про себе</label>
+        <textarea class="form-textarea" id="about"></textarea>
+      </div>
+
+      <ul class="form-hints">
+        <li>Не менше 8 символів</li>
+        <li>Хоча б одна цифра</li>
+        <li>Хоча б одна велика літера</li>
+        <li>Паролі мають збігатися</li>
+      </ul>
+
+      <p class="form-rules">
+        <input type="checkbox" id="agree" />
+        <label for="agree"
+          >Погоджуюсь з
+          <a class="rules-link" href="#">правилами курсу</a></label
+        >
+      </p>
+
+      <div class="form-buttons">
+        <button class="btn btn-reset" type="reset">Скасувати</button>
+        <button class="btn btn-submit" type="submit">Зареєструватись</button>
+      </div>
+    </form>
+  </body>
+</html>
