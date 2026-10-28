@@ -4,14 +4,14 @@ body {
 }
 
 .header {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  gap: 20px;
   padding: 10px 30px;
+  text-align: right;
 }
 
 .header-link {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 20px;
   color: #444;
   text-decoration: none;
   padding: 4px;
@@ -26,7 +26,11 @@ body {
 }
 
 .popup-wrap {
+  display: inline-block;
+  vertical-align: middle;
   position: relative;
+  margin-left: 20px;
+  text-align: left;
 }
 
 .popup-toggle {
@@ -79,8 +83,6 @@ body {
 }
 
 .popup {
-  display: flex;
-  flex-direction: column;
   position: absolute;
   top: 44px;
   right: -10px;
@@ -105,30 +107,30 @@ body {
 }
 
 .popup-grid,
-.popup-extra,
-.popup-more {
-  flex-shrink: 0;
+.popup-extra {
+  padding: 20px 10px;
 }
 
-.popup-grid {
-  display: flex;
-  flex-wrap: wrap;
-  padding: 20px 10px;
+/* clearfix для блоків із плаваючими іконками */
+.popup-grid:after,
+.popup-extra:after {
+  display: block;
+  content: "";
+  clear: both;
 }
 
 .popup-extra {
   display: none;
-  flex-wrap: wrap;
-  padding: 20px 10px;
   border-top: 1px solid #ddd;
 }
 
 .popup:has(.more-toggle:checked) .popup-extra {
-  display: flex;
+  display: block;
 }
 
 .popup-item {
   display: block;
+  float: left;
   width: 94px;
   margin: 4px;
   padding: 14px 0;
@@ -170,6 +172,7 @@ body {
 }
 
 .popup-more {
+  display: block;
   position: sticky;
   bottom: 0;
   padding: 12px;
@@ -185,5 +188,4 @@ body {
 
 .more-toggle:focus + .popup-more {
   outline: 2px solid #a9c4f5;
-  outline-offset: -2px;
 }
