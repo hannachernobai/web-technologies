@@ -111,7 +111,6 @@ body {
   padding: 20px 10px;
 }
 
-/* clearfix для блоків із плаваючими іконками */
 .popup-grid:after,
 .popup-extra:after {
   display: block;
