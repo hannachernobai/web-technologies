@@ -1,6 +1,3 @@
-/* ==========================================
-   1. СКИДАННЯ СТИЛІВ (CSS RESET)
-   ========================================== */
 *,
 *::before,
 *::after {
@@ -9,35 +6,9 @@
   padding: 0;
 }
 
-html,
-body {
-  height: 100%;
-}
-
-img,
-picture,
-video,
-canvas,
-svg {
-  display: block;
-  max-width: 100%;
-}
-
-input,
-button,
-textarea,
-select {
-  font: inherit;
-}
-
-/* ==========================================
-   3. CSS VARIABLES (ЗМІННІ)
-   ========================================== */
 :root {
-  /* Шрифти */
   --main-font: "Roboto", sans-serif;
 
-  /* Кольори */
   --bg-color: #f7f7f7;
   --card-bg: #ffffff;
   --text-primary: #333333;
@@ -45,14 +16,10 @@ select {
   --text-muted: #888888;
   --border-color: #e0e0e0;
 
-  /* Відступи та розміри */
   --card-max-width: 450px;
   --gap-main: 10px;
 }
 
-/* ==========================================
-   ОСНОВНІ СТИЛІ ТА FLEXBOX
-   ========================================== */
 body {
   font-family: var(--main-font);
   color: var(--text-primary);
@@ -69,7 +36,6 @@ body {
   padding: 20px 10px;
 }
 
-/* Header Section */
 .weather-header {
   border-bottom: 1px solid var(--border-color);
   padding-bottom: 15px;
@@ -129,7 +95,6 @@ body {
   line-height: 1.4;
 }
 
-/* Forecast List (Flexbox) */
 .forecast-list {
   display: flex;
   flex-direction: column;

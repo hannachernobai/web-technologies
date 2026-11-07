@@ -1,0 +1,37 @@
+.tree {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 4px;
+  padding: 4px;
+  background: #fff;
+  counter-reset: num;
+}
+
+.tree div {
+  background: #ffd940;
+  color: #fff;
+  font-size: 32px;
+  text-align: center;
+  padding: 8px 0;
+}
+
+.tree div::before {
+  counter-increment: num;
+  content: counter(num);
+}
+
+.tree div:nth-child(1) {
+  grid-column: span 12;
+}
+.tree div:nth-child(n + 2):nth-child(-n + 3) {
+  grid-column: span 6;
+}
+.tree div:nth-child(n + 4):nth-child(-n + 6) {
+  grid-column: span 4;
+}
+.tree div:nth-child(n + 7):nth-child(-n + 10) {
+  grid-column: span 3;
+}
+.tree div:nth-child(n + 11):nth-child(-n + 16) {
+  grid-column: span 2;
+}
